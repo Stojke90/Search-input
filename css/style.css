@@ -1,0 +1,150 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Times New Roman", Times, sans-serif;
+	box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    margin: auto;
+    background-color: black;
+}
+
+/* start header */
+header {
+	height: 400px;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
+    border-bottom-style: groove;
+}
+/* end header */
+
+/* start main */
+main {
+	max-width: 1100px;
+	width: 100%;
+	margin: auto;
+	padding: 25px 15px;
+	background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    min-height: 500px;
+}
+
+#search_field {
+	text-align: center;
+	margin: 20px;
+}
+
+#search_field input {
+	max-width: 450px;
+    width: 100%;
+    height: 40px;
+    background-size: 5%;
+    background-repeat: no-repeat;
+    background-position: right;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    outline: none;
+
+    border-style: none none ridge;
+    background-color: transparent;
+    border-color: grey;
+}
+
+::placeholder {
+	color: #ff4500;
+	font-weight: bold;
+}
+
+#list {
+	max-width: 1100px;
+    width: 100%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+
+#list ul {
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+#list ul li {
+	width: 24%;
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+#list ul li p {
+	font-weight: bolder;
+    padding-top: 10px;
+    color: #ff4500;
+    font-size: 18px;
+}
+
+#list > ul > li > img {
+	filter: drop-shadow(6px -5px 9px blue);
+	border-style: double;
+    border-width: thin;
+}
+
+.butt {
+    width: 20%;
+    background-color: transparent;
+    position: relative;
+    top: 328px;
+    z-index: 1;
+    left: 86px;
+    outline: inset;
+    outline-color: transparent;
+}
+
+button > img {
+	width: 100%;
+	margin-top: 3px;
+}
+
+.white {
+	color: white;
+}
+/* end main */
+
+/* start footer */
+footer{
+	text-align: center;
+    line-height: 2;
+    background-color: #c32a2aa6;;
+}
+
+footer p {
+	padding: 15px;
+}
+/* end footer */
+
+/* responsive  */ 
+
+@media all and (min-width: 1001px){
+	li.lists:hover {
+	box-shadow: 0px 0px 32px 10px #ffffff;
+	transform: scale(1.03);
+	}
+}
+
+@media all and (max-width: 1000px) {
+	#list ul li {
+		width: 30%;
+	}
+
+	.butt {
+		top: -5px;
+		left: 221px;
+	}
+}
