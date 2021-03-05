@@ -109,25 +109,31 @@ header();
 // input
 function magnifyingGlassImg() {
 	var input = document.querySelector("#myInput");
-	input.style.backgroundImage = "url(./img/585e4adacb11b227491c3392.png)";
+	input.style.backgroundImage = "url(https://icon-library.com/images/search-icon-transparent-background/search-icon-transparent-background-9.jpg)";
 }
 magnifyingGlassImg();
+
 // input
 function inputField() {
 	var input = document.querySelector("input");
 
+	input.onclick = function(){
+		input.placeholder = "";
+		input.style.backgroundColor = "#0000ff38";
+	}
+
 	input.onmouseover = function(){
-		input.style.borderColor = "red";
+		input.style.borderColor = "orangered";
 	}
 
 	input.onmouseout = function(){
 		input.style.borderColor = "grey";
 	}
 }
+
 inputField();
 
-
-// backfround on main
+// background on main
 function imgMain(){
 	document.querySelector("main").style.backgroundImage =  "url(https://freepngimg.com/thumb/avengers/24571-8-avengers-transparent-image.png)";
 }
@@ -191,10 +197,11 @@ function makeButton() {
 		button.setAttribute("class", "butt");
 
 		var removeImg = document.createElement("img");
-		removeImg.setAttribute("src","https://www.nicepng.com/png/detail/395-3957041_feedback-button-transparent-png-sticker-delete-button-icon.png");
+		removeImg.setAttribute("src","https://icons-for-free.com/iconfiles/png/512/cercle+close+delete+dismiss+remove+icon-1320196712448219692.png");
 		
 		button.prepend(removeImg);
 		li[i].prepend(button);
+		
 	}
 }
 makeButton();
@@ -214,9 +221,6 @@ makeButton();
 	}
 
 removeMovie();
-
-
-
 
 
 

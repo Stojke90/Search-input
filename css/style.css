@@ -44,17 +44,17 @@ main {
 	max-width: 450px;
     width: 100%;
     height: 40px;
-    background-size: 5%;
+    background-size: 7%;
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: 410px center;
     padding: 5px 10px;
     font-size: 16px;
     border-radius: 10px;
     outline: none;
-
     border-style: none none ridge;
     background-color: transparent;
     border-color: grey;
+    border-bottom-width: thick;
 }
 
 ::placeholder {
@@ -81,6 +81,8 @@ main {
 	width: 24%;
 	text-align: center;
 	margin-bottom: 25px;
+    position: relative;
+    padding: 15px;
 }
 
 #list ul li p {
@@ -97,19 +99,18 @@ main {
 }
 
 .butt {
-    width: 20%;
+    width: 16%;
     background-color: transparent;
-    position: relative;
-    top: 328px;
+    position: absolute;
     z-index: 1;
-    left: 86px;
+    left: 197px;
     outline: inset;
     outline-color: transparent;
 }
 
 button > img {
 	width: 100%;
-	margin-top: 3px;
+	margin-bottom: -4px;
 }
 
 .white {
@@ -144,7 +145,56 @@ footer p {
 	}
 
 	.butt {
-		top: -5px;
-		left: 221px;
+		left: 204px;
 	}
+}
+
+@media all and (max-width: 960px) {
+    .butt {
+        left: 203px;
+    }
+}
+
+@media all and (max-width: 912px) {
+    .butt {
+        left: 198px;
+}
+
+@media all and (max-width: 830px) {
+    #list ul li {
+        width: 40%;
+    }
+
+    .butt {
+        left: 225px;
+        width: 13%;
+    }
+}
+
+@media all and (max-width: 760px) {
+    button.butt {
+        left: 215px;
+    }
+}
+
+@media all and (max-width: 660px) {
+    button.butt {
+        left: 204px;
+    }
+}
+
+@media all and (max-width: 590px) {
+   #list ul li {
+        width: 54%;
+    }
+
+    button.butt {
+        left: 217px;
+    }
+}
+
+@media all and (max-width: 501px) {
+    button.butt {
+        left: 205px;
+    }
 }
