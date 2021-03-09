@@ -103,9 +103,11 @@ main {
     background-color: transparent;
     position: absolute;
     z-index: 1;
-    left: 197px;
+    left: 217px;
+    top: -5px;
     outline: inset;
     outline-color: transparent;
+    border-radius: 50%;
 }
 
 button > img {
@@ -141,23 +143,24 @@ footer p {
 
 @media all and (max-width: 1000px) {
 	#list ul li {
-		width: 30%;
+		width: 27%;
 	}
 
 	.butt {
-		left: 204px;
+		left: 216px;
 	}
 }
 
 @media all and (max-width: 960px) {
     .butt {
-        left: 203px;
+        left: 216px;
     }
 }
 
 @media all and (max-width: 912px) {
     .butt {
-        left: 198px;
+        left: 217px;
+        top: -3px;
 }
 
 @media all and (max-width: 830px) {
@@ -166,20 +169,21 @@ footer p {
     }
 
     .butt {
-        left: 225px;
-        width: 13%;
+        left: 245px;
+        width: 12%;
     }
 }
 
 @media all and (max-width: 760px) {
     button.butt {
-        left: 215px;
+        left: 235px;
     }
 }
 
 @media all and (max-width: 660px) {
     button.butt {
-        left: 204px;
+        left: 220px;
+        top: 0px;
     }
 }
 
@@ -189,12 +193,12 @@ footer p {
     }
 
     button.butt {
-        left: 217px;
+        left: 238px;
     }
 }
 
 @media all and (max-width: 501px) {
     button.butt {
-        left: 205px;
+        left: 221px;
     }
 }

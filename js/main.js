@@ -117,9 +117,10 @@ magnifyingGlassImg();
 function inputField() {
 	var input = document.querySelector("input");
 
-	input.onclick = function(){
+	input.onclick = function(e){
 		input.placeholder = "";
 		input.style.backgroundColor = "#0000ff38";
+		e.stopPropagation();
 	}
 
 	input.onmouseover = function(){
@@ -133,13 +134,21 @@ function inputField() {
 
 inputField();
 
+
+
 // background on main
 function imgMain(){
 	document.querySelector("main").style.backgroundImage =  "url(https://freepngimg.com/thumb/avengers/24571-8-avengers-transparent-image.png)";
 }
 imgMain();
 
+var main = document.querySelector("main");
 
+main.addEventListener('click', function(e){
+	var input = document.querySelector("input");
+	e.stopPropagation();
+	input.style.backgroundColor = "transparent";
+})
 
 function madeLi(data) {
 	for(var i = 0; i < data.length; i++){
